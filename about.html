@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="about.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"> </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/turn.js/3/turn.min.js"></script>
+  <script type="text/javascript" src="plug/jquery.indexSlidePattern.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="plug/jquery.jcarousel-core.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="gotop">
+    <div class="txt">
+      <p>D</p>
+      <p>O</p>
+      <p>R</p>
+      <p>I</p>
+      <p>A</p>
+      <p>N</p>
+      <p>｜</p>
+    </div>
+    <div class="icon">
+      <i class="fa fa-facebook-square" onclick="window.open('https://www.facebook.com/dorianjazzband/')"></i>
+      <a href="tel:+886-2-3278918"> 
+          <i class="fa fa-phone-square"></i>
+      </a>
+      <i class="fa fa-arrow-circle-up"></i>
+    </div>
+  </div>
+  <div class="menu_slide">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="menu_section">
+    <div class="top">
+      <img id="top_pic" src="images/14604002-01.jpg" alt="">
+    </div>
+    
+    <ul>
+      <li onclick="location.href='index.html'">HOME</li>
+       <li onclick="location.href='about.html'">ABOUT</li>
+       <li onclick="location.href='performance.html'">PERFORMANCE</li>
+       <li onclick="location.href='video.html'" style="color:#333">VIDEO</li>
+       <li onclick="location.href='contact.html'">CONTACT</li>
+   </ul>
+    <div class="bottom">
+      <img id="bottom_pic" src="images/14604002-01.jpg" alt="">
+    </div>
+    
+    <div class="slide_icon">
+      <img src="images/01.gif" alt="" style=" width: 10vmin; " id="menu_up">
+    </div>
+    
+
+  </div>
+  <section class="section_navbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav">
+                    <ul>
+                        
+                        <li onclick="location='about.html'">ABOUT</li>
+                        <li onclick="location='performance.html'">PERFORMANCE</li>
+                        <li id="home" onclick="location='index.html'">
+                           <img style=" width: 80%; height: auto;" src="images/12781858_xxl.gif" alt="" >
+                        
+                        </li>
+                        <li onclick="location='video.html'">VEDIO</li>
+                        <li onclick="location='contact.html'">CONTACT</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <div id="luxy">
+    <div class="move_pic"></div>
+    <section class="section_intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+
+            <div class="header_title">
+              <h1>ABOUT</h1>
+              <i class="fa fa-chevron-down" style="font-size: 6vmin;"></i>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+            <div class="img"></div>
+            <div class="items">
+              <div class="item" id="item01">演出類型</div>
+              <div class="item" id="item02">演出樂團</div>
+              <div class="item" id="item03">演出經歷</div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="txt" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+              <h4>DORIAN</h4>
+              <p>我們是一群來自各個不同領域的專業音樂家們 .從管樂 弦樂 演唱 打擊樂 及國樂演奏 演出風格包括古典音樂 爵士Jazz音樂 流行音樂 拉丁音樂 .....等 風格多元。
+
+                Dorian 的音樂家們 有豐富的音樂表演演出經歷 各種型態音樂會公演 商業演出 高級晚宴 婚禮樂團表演 婚禮音樂 現場演奏 公益活動 藝人演唱會 專輯錄音 配樂錄音.....等
+                為您打造專屬的現場演奏音樂演出型態。</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section_items">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12" class="items_descrip">
+            <div class="txt" data-aos="fade-up" data-aos-duration="2000">
+              
+              <h2 style="margin-top: 10vh;">PERFORMANCE</h2>
+              <p>Dorian 的音樂家們 有豐富的音樂表演演出經歷 各種型態音樂會公演 商業演出 高級晚宴 婚禮樂團表演 婚禮音樂 現場演奏 公益活動 藝人演唱會 專輯錄音 配樂錄音.....等
+                為您打造專屬的現場演奏音樂演出型態。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="desktop">
+          <div class="col-md-12">
+            <div class="wrap">
+              <div class="item">
+                <div class="pic" data-aos="flip-up" data-aos-duration="1500">
+                  <img src="images/11.gif" alt="">
+                </div>
+                <div class="txt">
+                  <h3>婚禮樂團</h3>
+                  <div class="btn" onclick="location.href='https://www.domc.com.tw/service'">More<i
+                      class="fa fa-arrow-right" onclick="location.href='https://www.domc.com.tw/service'"></i></div>
+                </div>
+
+              </div>
+              <div class="item">
+                <div class="pic" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                  <img src="images/22.gif" alt="">
+                </div>
+                <div class="txt">
+                  <h3>婚禮音樂</h3>
+                  <div class="btn" onclick="location.href='https://www.domc.com.tw/service'">More<i
+                      class="fa fa-arrow-right"></i></div>
+                </div>
+
+              </div>
+              <div class="item">
+                <div class="pic" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="600">
+                   <img src="images/33.gif" alt="">
+                </div>
+                <div class="txt">
+                  <h3>現場演奏</h3>
+                  <div class="btn" onclick="location.href='https://www.domc.com.tw/service'">More<i
+                      class="fa fa-arrow-right" onclick=""></i></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    
+    <section class="section_fullScreen">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12" style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+            <h3 style="opacity: 0.7;" data-aos="fade-up" data-aos-duration="1000">樂器配置 </h3>
+            <p style="opacity: 0.7;" data-aos="fade-up" data-aos-duration="1000">鋼琴(或鍵盤)、薩克斯風、長號、小號、長笛、豎笛、小提琴、中提琴、大提琴、低音大提琴、豎琴、吉他、BASS、爵士鼓、非洲手鼓、拉丁打擊樂器……等
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10vmin;">
+          <div class="col-md-6" style="display: flex; justify-content: flex-end;">
+            <div class="pic"></div>
+          </div>
+          <div class="col-md-6" style="display: flex; align-items: center;">
+            <div class="txt" data-aos="fade-up" data-aos-duration="1500" style="display: flex; justify-content: center; align-items: center;flex-direction: column; padding-left: 5vmin;">
+              <h3>DORIAN樂團</h3>
+              <p>Dorian 的音樂家們 有豐富的音樂表演演出經歷 各種型態音樂會公演 商業演出 高級晚宴 婚禮樂團表演  婚禮音樂 現場演奏 公益活動 藝人演唱會 專輯錄音 配樂錄音.....等  為您打造專屬的現場演奏音樂演出型態。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn" style="width: 100%; display: flex;justify-content: center;align-items: center; ">
+        <h4 onclick="location.href='performance.html'">查看更多演出表演</h4>
+      </div>
+    </section>
+
+    <section class="section_descrip">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="wrap" style="display: flex;justify-content: center;
+          align-items: center; ">
+              <div class="pic" style="overflow: hidden;">
+
+              </div>
+
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-10">E</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-8">X</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-6">P</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-4">E</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="-2">R</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="0">I</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="2">E</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="4">N</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="6">C</div>
+              <div class="luxy-el inner-el" data-horizontal="1" data-speed-x="8">E</div>
+
+
+
+
+              <h3 class="luxy-el" data-horizontal="1" data-speed-x="2">SHOW</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'"
+            onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>藝文相關單位所舉辦的藝文活動，爵士音樂會於正式的室內音樂廳演出，樂團演出較藝術取向的音樂及歌曲</h4>
+
+
+            </div>
+            <div class="main_square" style="background-image: url(images/playlist-pic-5.jpg);">
+              <h4 style>音樂會</h4>
+            </div>
+
+          </div>
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>展覽會、企業會議、受邀來自世界各國的嘉賓共同參與的晚宴，現場樂團帶來各國家耳熟能詳的歌曲及音樂，讓現場氣氛更加分</h4>
+
+
+            </div>
+            <div class="main_square" style="background-image:
+              url(images/playlist-pic-3.jpg);">
+              <h4>外賓酒會</h4>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row" >
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>Dorian 受邀擔任印尼航空首航典禮晚宴，來自東南亞各國的嘉賓晚宴用餐時邊享用大編制樂團帶來的經典流行音樂</h4>
+
+
+            </div>
+            <div class="main_square" style="background-image:url(images/playlist-pic-6.jpg);;">
+              <h4>公關活動晚宴 </h4>
+            </div>
+
+          </div>
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>台北年度國際電腦展Computex雞尾酒會，樂團於現場演奏輕鬆的音樂
+
+              </h4>
+
+
+            </div>
+            <div class="main_square" style="background-image:
+              url(images/playlist-pic-9.jpg);;">
+              <h4>大型展覽會
+              </h4>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row" >
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>荷蘭駐台辦事處慶祝一年一度荷蘭國慶，邀請在台的美歐人士及政府嘉賓一同在宴會廳內舉辦派對。現場樂團演奏經典的耳熟能詳歌曲與在場嘉賓一起同歡
+
+              </h4>
+
+
+            </div>
+            <div class="main_square" style="background-image: url(images/playlist-pic-4.jpg);;">
+              <h4>Party</h4>
+            </div>
+
+          </div>
+          <div class="col-md-5" onclick="location.href='https://domc.tw/playing_list.php?num=5'">
+            <div class="outside">
+
+              <h4>年度的台北市大稻埕音樂煙火節 Dorian受邀為主秀音樂節目，於大稻埕碼頭邊的露天舞台。音樂、煙火、夏夜晚風帶來難忘的美好夜晚
+
+              </h4>
+
+
+            </div>
+            <div class="main_square" style="background-image:
+              url(images/playlist-pic-8.jpg);;">
+              <h4>大型活動
+              </h4>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <script src="plug/luxy.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    if($(window).width()<1500){
+      luxy.init({
+        wrapper: '#luxy',
+        targets: '.luxy-el',
+        wrapperSpeed: 0.08,
+        targetSpeed: 0.02,
+        targetPercentage: 0.1
+    });
+    } else{
+        luxy.init({
+        wrapper: '#luxy',
+        targets: '.luxy-el',
+        wrapperSpeed: 0.08,
+        targetSpeed: 0.02,
+        targetPercentage: 0.1
+    });
+    }
+</script>
+  <script>
+    
+
+     $('.menu_slide').click(function () {
+            $('.menu_section').slideToggle(500)
+
+            $(html,body).css('filter','blur(10px)')
+        })
+        $('#menu_up').click(function(){
+            $('.menu_section').slideToggle(500)
+        })
+    //autoplay video
+    function onYouTubeIframeAPIReady() {
+      var player;
+      player = new YT.Player('muteYouTubeVideoPlayer', {
+        videoId: '6DlN069MTrA', // YouTube 影片 ID
+        width: 650, // 播放器寬度 (in px)
+        height: 356, // 播放器長度 (in px)
+        playerVars: {
+          autoplay: 1, // 自動播放視頻
+          controls: 1, // 顯示播放/暫停按鈕
+          showinfo: 0, // 隱藏影片標題
+          modestbranding: 1,
+          rel: 0, // 隱藏YouTube LOGO
+          loop: 1, // 循環播放
+          fs: 0, // 隱藏全螢幕視窗按鈕
+          cc_load_policty: 0, // 隱藏關閉字幕
+          iv_load_policy: 3, // 隱藏影片註釋
+          autohide: 0 // 播放時隱藏影片控制按鈕
+        },
+        events: {
+          onReady: function (e) {
+            e.target.mute(); // 靜音
+          }
+        }
+      });
+    }
+
+    AOS.init();
+
+    $('.fa-chevron-down').click(function () {
+      $('html,body').animate({ scrollTop: $('.section_items').offset().top }, 1000)
+    })
+
+    $('#item01').click(function () {
+      $('html,body').animate({ scrollTop: $('.section_items').offset().top }, 1000)
+    })
+
+    $('#item02').click(function () {
+      $('html,body').animate({ scrollTop: $('.section_fullScreen').offset().top }, 1000)
+    })
+
+    $('#item03').click(function () {
+      $('html,body').animate({ scrollTop: $('.section_descrip').offset().top }, 1000)
+    })
+
+    $('.gotop').click(function () {
+      $('html,body').animate({ scrollTop: 0 }, 1000)
+    })
+
+  
+
+    $('#list01').on({
+      mouseenter: function () {
+        $('#iframe01').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe01').fadeOut(500)
+      }
+    })
+    $('#list02').on({
+      mouseenter: function () {
+        $('#iframe02').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe02').fadeOut(500)
+      }
+    })
+    $('#list03').on({
+      mouseenter: function () {
+        $('#iframe03').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe03').fadeOut(500)
+      }
+    })
+    $('#list04').on({
+      mouseenter: function () {
+        $('#iframe04').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe04').fadeOut(500)
+      }
+    })
+    $('#list05').on({
+      mouseenter: function () {
+        $('#iframe05').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe05').fadeOut(500)
+      }
+    })
+    $('#list06').on({
+      mouseenter: function () {
+        $('#iframe06').fadeIn(500)
+      },
+      mouseleave: function () {
+        $('#iframe06').fadeOut(500)
+      }
+    })
+
+    $('#mycarousel').jcarousel()
+  </script>
+</body>
+
+</html>

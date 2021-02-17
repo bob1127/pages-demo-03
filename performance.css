@@ -1,0 +1,1311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+    list-style: none;
+}
+::selection {
+    background:#FFAC06 ;
+    opacity: 1;
+    
+	
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #07121E;
+    /* animation: fadeinAnination ease 4s; */
+    z-index: 10;
+    animation: loading 1.5s linear
+}
+@keyframes loading{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+section{
+    margin-top: 20vh;
+}
+@keyframes fadeinAnination{
+    0%{
+        opacity:0;
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h1,h3,h2{
+   
+    font-family: 'Noto Sans TC', sans-serif;
+   
+}
+p{
+    font-size: 2vmin;
+    font-weight: 500;
+    font-family: 'times new romance';
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
+/* .container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+/*字體RWD設定*/
+html {
+    font-size: 14px;
+}
+
+body {
+    font-size: 1.2rem;
+    color: #f3f3f3
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        font-size: calc(1.2rem + (1.3-1.2) * ((100vw - 600px) / (1200 - 600)));
+    
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.3rem;
+   
+    }
+}
+.nav {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3f3f3;
+    position: fixed;
+    transition: top 1.5s ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(7,18,30);
+
+}
+
+h1 {
+    font-size: 8vmin;
+    color: #FFAC06;
+    text-align: center;
+  
+}
+
+section.section_navbar {
+    width: 100%;
+
+    z-index: 55;
+    position: fixed;
+    font-family: 'Noto Sans TC',
+        sans-serif;
+    background-color: rgb(7,18,30);
+}
+/*side nav*/
+.gotop {
+    position: absolute;
+    z-index: 999;
+    position: fixed;
+    right: 2vw;
+    top: 50%
+}
+
+.gotop .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1vmin;
+
+}
+
+.gotop p {
+    font-size: 2.5vmin;
+    font-weight: 900;
+    color: #FFAC06
+}
+
+.gotop .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.gotop .icon i {
+    font-size: 2.5vmin;
+    margin-top: 1.7vmin;
+    color: #FFAC06;
+    opacity: 0.4;
+    transition: 0.3s
+}
+
+.gotop .icon i:hover {
+    cursor: pointer;
+    opacity: 1
+}
+@media screen and (max-width: 490px){
+    .gotop .icon i {
+        font-size: 4vmin;
+    }
+    .gotop p {
+        font-size: 4vmin;
+       
+    }
+    
+}
+.menu_slide{
+    width: 100%;
+   
+    background-color: #07121E;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    top: 0
+   
+}
+.menu_slide:hover{
+    cursor: pointer;
+}
+.menu_slide i{
+    
+    position: fixed;
+    font-size: 7vmin;
+    left: 50%;
+    top: 0;
+    z-index: 999;
+}
+.menu_section{
+    width: 100%;
+    height: 80vh;
+    background-color: #f4f4f4;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:0;
+    display: none;
+    box-shadow: 10px 10px 5px black;
+    
+    
+}
+
+.menu_section ul{
+    width: 100%;
+    height: 50vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.menu_section li{
+    color: #333;
+    list-style: none;
+    font-size: 5vmin;
+    margin-top: 5vmin;
+}
+.menu_section .top{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+#top_pic{
+    transform: rotate(180deg);
+}
+.menu_section .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_section .slide_icon{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+}
+@media screen and (max-width:450px){
+    .menu_slide{
+        display: block;
+     }
+}
+
+.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav li {
+    width: 25vmin;
+    height: 9vh;
+    transition: .8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    line-height: 6.5vh;
+    
+    
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+.nav li::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+    background-color: #9e7113;
+    opacity: 0;
+    transition: .9s ease-in-out;
+
+}
+
+li:hover::before {
+
+    opacity: 1;
+    left: 2.5vw;
+
+}
+.nav #home::before{
+    background-color: transparent;
+}
+.hide {
+    top: -400px
+}
+@media screen and (max-width:450px) {
+    section.section_navbar {
+        display: none
+    }
+}
+.nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav li {
+    padding: 20px 30px;
+    transition: .8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 5px;
+
+
+
+}
+
+@media screen and(max-width:1800px) {
+    .nav li {
+        padding: 5px;
+    }
+}
+
+
+section.section_intro {
+    background-color: #23303f;
+    height: 95vh;
+    overflow: hidden;
+  
+    margin-top: 5vh;
+
+}
+
+section.section_intro .col-md-3 {
+    background-color: #E8C22D;
+    position: relative;
+    height: 100vh;
+
+}
+
+section.section_intro .col-md-3 .items {
+
+    position: absolute;
+    right: -5vmin;
+    top: 10%;
+    z-index: 999;
+}
+
+section.section_intro .col-md-3 .items .item {
+    padding: 1vmin 3vmin;
+    background-color: #23303f;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 2vmin;
+    margin-top: 2vmin;
+    transition: 0.2s ease-in-out
+}
+
+section.section_intro .col-md-3 .item:hover {
+    font-size: 1.5vmin;
+    cursor: pointer
+}
+
+section.section_intro .wrap {
+    width: 60%
+}
+
+section.section_intro .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+section.section_intro .col-md-5 {
+    position: relative;
+    height: 100vh;
+}
+
+section.section_intro .col-md-5 .header_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* section.section_intro .col-md-5 .header_title i {
+    margin-top: 18vmin;
+} */
+.fa-chevron-down {
+    position: absolute;
+    left: 48%;
+    top: 15vh;
+    font-weight: normal;
+    animation: move 2s infinite;
+    ;
+    opacity: 0.5;
+}
+
+.fa-chevron-down:hover {
+    cursor: pointer;
+}
+
+@keyframes move {
+    0% {
+        top: 15vh;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: 18vh;
+        opacity: 1;
+    }
+}
+section.section_intro .col-md-4 .txt {
+    width: 70%;
+}
+
+section.section_intro .wrap .txt {
+    width: 50%;
+}
+
+section.section_intro .img {
+    background-image: url(images/84355120-cello-player-cellist-playing-violoncello-musical-instruments-closeup-isolated.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 180%;
+    height: 50vmin;
+    position: absolute;
+    bottom: 15vmin;
+    right: -15vw;
+
+    animation: pic_change 1.3s linear;
+}
+
+@keyframes pic_change {
+    0% {
+        transform: scale(0);
+        bottom: 90vmin;
+        right: -35vw;
+    }
+
+    100% {
+        transform: scale(1);
+        bottom: 5vmin;
+        right: -15vw;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    section.section_intro {
+        height: 50vh;
+    }
+
+    section.section_intro .col-md-3,
+    section.section_intro .col-md-4,
+    section.section_intro .col-md-5 {
+        height: 50vh;
+    }
+
+    section.section_intro .col-md-4 .txt {
+        width: 85%;
+
+    }
+
+    section.section_intro .col-md-4 .txt p {
+        font-size: 1.2vmin;
+    }
+
+    section.section_intro .col-md-5 .header_title {
+        top: 50%
+    }
+
+    section.section_intro .col-md-5 .header_title i {
+        margin-top: 20vmin;
+    }
+
+    section.section_intro img {
+        width: 200%;
+        margin-left: -70%;
+    }
+
+    section.section_intro .col-md-3 .items .item {
+        font-size: 1.5vmin;
+    }
+
+    section.section_intro .col-md-3 .items {
+        top: 18%;
+        right: -3vmin
+    }
+}
+
+@media screen and (max-width:490px) {
+    section.section_intro .col-md-4 .txt p {
+        font-size: 3vmin;
+    }
+    section.section_intro .col-md-3 .items .item {
+        font-size: 3.3vmin;
+    }
+    section.section_intro .col-md-5 .header_title {
+        top: -10vmin
+    }
+
+    section.section_intro .col-md-5 .header_title i {
+        margin-top: 30vmin;
+    }
+
+    section.section_intro .col-md-3 {
+        margin-top: 5vh;
+        position: relative;
+    }
+
+    section.section_intro .col-md-4 .txt {
+        position: absolute;
+        top: 5vmin
+    }
+
+    section.section_intro .col-md-3 .items {
+        top: -80%;
+        right: 40%
+    }
+
+    section.section_intro .img {
+        height: 45vh;
+    }
+    section.section_intro{
+        height: 140vh;
+    }
+    section.section_intro .items{
+        margin-top: 15vmin;
+    }
+}
+section.section_wedding #wedding_main_pic {
+    /* border: 1px solid #fff; */
+    height: 50vh;
+    position: relative;
+}
+section.section_wedding #wedding_main_pic h3{
+   position: absolute;
+   color: #333;
+   font-family: 'Noto Sans TC';
+   font-size: 4vmin;
+   font-weight: 900;
+   letter-spacing :2.5vmin;
+   right: 20%
+   
+}
+section.section_wedding #wedding_main_pic .col-md-12{
+    background-color: #f3f3f3;
+    height: 40vh;
+}
+section.section_wedding #wedding_main_pic img{
+    width: 50%;
+    margin-right: 40vmin
+}
+section.section_wedding .wedding_pic{
+    width: 100%;
+    opacity: 0.7;
+    background:linear-gradient(to right,rgba(7,18,30,0.2),rgba(7,18,30,0.3)),url(images/25551409_xxl.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+   
+    
+}
+section.section_wedding .wedding_pic .txt{
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: 5vmin;
+    border-bottom: solid 2px white;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end ;
+}
+section.section_wedding .wedding_pic .txt p{
+    margin-right: 5vmin;
+    letter-spacing:2vmin
+}
+section.section_wedding .container .col-md-6 .txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vmin;
+    text-justify: distribute
+}
+section.section_wedding .container .col-md-6 .txt p{
+    font-size: 1.7vmin;
+    font-weight: normal;
+    opacity: 0.5;
+    line-height: 2;
+    
+}
+section.section_wedding .container .col-md-6 .txt .btn{
+    border: 1px solid #fff;
+    padding: 0.5vmin 2vmin;
+    color: white;
+    transition: 0.4s
+}
+section.section_wedding .container .col-md-6 .txt .btn:hover{
+    cursor: pointer;
+    background-color:  rgba(255,255,255,0.3);
+}
+section.section_wedding .container .col-md-6 .items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+section.section_wedding .container .col-md-6 .items .item{
+    width: 100%;
+    margin: 1vmin 0;
+    border-bottom: 2.3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+   
+    transition: 0.4s
+    
+}
+
+section.section_wedding .container .col-md-6 .items .item:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer
+}
+section.section_wedding .container .col-md-6 .items .item i{
+    transition: 0.4s
+}
+section.section_wedding .container .col-md-6 .items .item:hover i{
+    margin-left: 2vmin;
+}
+section.section_wedding .container .col-md-6 .items .item .txt{
+    padding: 0 3vmin;
+    width: 60%;
+    text-justify: distribute
+}
+section.section_wedding .container .col-md-6 .items .item .txt p{
+    opacity: 0.5;
+    
+}
+section.section_wedding .container .col-md-6 .items .item .pic{
+    width: 40%;
+    height: 20vh;
+    background-position: center center;
+    background-size: cover;
+}
+section.section_wedding small{
+    font-size: 1.9vmin;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:450px){
+    section.section_wedding p{
+        display: none;
+    }
+    section.section_wedding #wedding_main_pic{
+       
+    }
+    section.section_wedding #wedding_main_pic img{
+        margin-top: -15vmin;
+        width: 75%;
+    }
+   
+}
+section.section_content .wedding_pic{
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://previews.123rf.com/images/olegparylyak/olegparylyak1805/olegparylyak180500491/101371446-bride-and-groom-exchanging-wedding-rings-stylish-couple-official-ceremony.jpg);
+    background-position: center left;
+    background-size: cover;
+   
+}
+
+@media screen and (max-width:1500px){
+    section.section_wedding .container .col-md-6 .items .item .pic{
+        height: 14vh;
+    }
+    section.section_wedding .container .col-md-6 .items .item{
+        margin-top: 1vmin;
+    }
+    section.section_wedding h5{
+        font-size: 1.2vmin;
+    }
+    section.section_wedding p{
+        font-size: 2px;
+    }
+    section.section_wedding small{
+        font-size: 1.6vmin;
+        opacity: 0.5;
+    }
+    section.section_wedding #wedding_main_pic{
+        overflow: hidden;
+    }
+    section.section_wedding #wedding_main_pic img{
+        margin-top: -5vmin;
+    }
+   
+}
+@media screen and (max-width:1500px){
+    section.section_wedding h5{
+        font-size: 2.5vmin;
+    }
+    section.section_wedding small{
+        font-size: 2.2vmin;
+        opacity: 0.5;
+    }
+}
+section.section_performStyle .col-md-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.section_performStyle .wrap_perform{
+    width: 100%;
+    height: 50vmin;
+    background-color: rgba(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    
+}
+section.section_performStyle .wrap_perform .txt{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+section.section_performStyle .wrap_perform .txt h2{
+   font-family: 'Cinzel',
+   serif;
+   color: #333;
+   font-size: 4vmin;
+   padding-bottom: 5vmin;
+
+}
+section.section_performStyle .button{
+    margin-top: 2vmin;
+    padding: 0.7vmin 5vmin;
+    border: 1px solid #333;
+    color:#333;
+    transition: 0.4s
+}
+section.section_performStyle .button:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}
+section.section_performStyle .wrap_perform .txt small{
+   color: #333;
+   letter-spacing: 2vmin;
+   font-size: 2.5vmin;
+ 
+}
+section.section_performStyle .button:hover{
+    background-color: rgb(8, 7, 15);
+    color: white;
+    cursor: pointer
+}
+section.section_performStyle .wrap_perform .txt p{
+   font-size: 1.5vmin;
+}
+section.section_performStyle .col-md-3{
+    position: relative;
+}
+#pic01{
+    
+    position: absolute;
+    z-index: 999;
+    right: -7vmin;
+    top: 22%;
+    transition: 0.4s;
+    width: 80%;
+}
+#pic02 {
+    position: absolute;
+    z-index: 999;
+    left: -7vmin;
+    top: 22%;
+    transition: 0.4s;
+    width: 90%;
+}
+#pic01:hover{
+    transform: scale(1.02)
+}
+#pic02:hover {
+    transform: scale(1.02)
+}
+@media screen and (max-width:1500px){
+    section.section_performStyle .wrap_perform{
+        height: 30vmin;
+    }
+    section.section_performStyle .wrap_perform .txt h2{
+        font-size: 2.5vmin;
+        padding-bottom:2vmin ;
+    }
+}
+@media screen and (max-width:769px){
+    section.section_performStyle .wrap_perform .txt h2{
+        font-size: 2.5vmin;
+        padding-bottom:0 ;
+    }
+    section.section_performStyle .wrap_perform .txt{
+        width: 70%;
+    }
+}
+@media screen and (max-width:490px){
+    section.section_performStyle .wrap_perform .txt h2{
+        font-size: 3.3vmin;
+      
+    }
+    section.section_performStyle .wrap_perform .txt p{
+        font-size: 2vmin;
+     }
+    #pic01,#pic02{
+      position: static;
+      margin: 3vh 0;
+      width: 100%;
+    }
+    section.section_performStyle .wrap_perform{
+        height: 60vmin;
+    }
+
+}
+section.section_yearEnd{
+    width: 100%;
+    margin-top: -20vh;
+    
+}
+section.section_yearEnd .col-md-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section.section_yearEnd #title01::after{
+    content: "spring-party band";
+    display: block;
+    color: white;
+    font-size: 3vmin;
+    color: #DE891A;
+    margin-left: -2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+section.section_yearEnd #title02::after{
+    content: "christmas band";
+    display: block;
+    color: white;
+    font-size: 3vmin;
+    color: #DE891A;
+    margin-left: -2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+section.section_yearEnd #title03::after{
+    content: "performance service";
+    display: block;
+    color: white;
+    font-size: 3vmin;
+    color: #DE891A;
+    margin-left: -2vw;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+section.section_yearEnd .wrap{
+    width: 100%;
+    height: 30vh;
+    
+}
+section.section_yearEnd .wrap .item{
+    width: 20%;
+    height: 20vh;
+    border-radius: 10px;
+    
+}
+.products{
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+ }
+ .cards{
+     width: 170%;
+     height: 500px;
+    
+     display: flex;
+     justify-content: center;
+     -ms-align-items: center;
+     align-items: center;
+     margin-top: 100px;
+     display: fixed;
+     padding-right: 200px;
+ 
+ }
+ section.section_yearEnd a{
+     
+ }
+ .card{
+     width: 17%;
+     height: 17vh;
+     background-color: white;
+     margin: 0px 80px;
+     transition: 0.5s;
+     position: relative;
+     background-position: center center;
+     background-size: cover;
+     box-shadow: 15px 15px 0px #f3f3f3;
+     border-radius: 10px;
+ }
+ 
+ .card:hover{
+     cursor: pointer;
+     transform: translateY(-20px) scale(1.1);
+ }
+ .card .product_img{
+     width: 100%;	
+     height: 120%;	
+     background-position: center center;
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-repeat: 	no-repeat;
+     position: absolute;	
+     top: -100px;
+     left: -100px;
+ }
+ .card h2{
+     position: absolute;
+     bottom: -12vh;
+     font-size: 2.6vmin;
+     
+ }
+ @media screen and (max-width:1500px){
+    section.section_yearEnd{
+        margin-top: 2vh;
+    }
+    .card{
+        width: 34vw;
+        height: 15vh;
+    }
+    .cards{
+        height: 40vh;
+        width: 550%;
+    }
+ }
+ @media screen and (max-width:450px){
+    .card{
+        width: 45vw;
+        height: 20vh;
+    }
+    .cards{
+        width: 580%;
+    }
+    .card h2{
+        font-size: 3vmin;
+    }
+ }
+#card1{
+   background-image: url(https://domc.tw/upload/playlist-pic-1.jpg);
+}
+#card2{
+    background-image: url(https://domc.tw/upload/playlist-pic-2.jpg);
+}
+#card3{
+    background-image: url(https://domc.tw/upload/playlist-pic-3.jpg);
+}
+#card4{
+    background-image: url(https://domc.tw/upload/playlist-pic-4.jpg);
+}
+#card5{
+    background-image: url(https://domc.tw/upload/playlist-pic-6.jpg);
+}
+#card6 {
+    background-image: url(https://domc.tw/upload/playlist-pic-7.jpg);
+}
+#card7 {
+    background-image: url(https://domc.tw/upload/playlist-pic-8.jpg);
+}
+#card8 {
+    background-image: url(https://domc.tw/upload/playlist-pic-9.jpg);
+}
+#card9 {
+    background-image: url(https://domc.tw/upload/playlist-pic-5.jpg);
+}
+section.section_yearEnd .items{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
+}
+section.section_yearEnd .items .item{
+    width: 33%;
+    height: 30vh;
+   
+    background-position: center center;
+    background-size: cover;
+
+
+}
+section.section_yearEnd .items .item:hover{
+    cursor:pointer
+}
+section.section_card_pad{
+    display: none;
+  
+}
+section.section_card_pad .items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+section.section_card_pad .items .item{
+    width: 25%;
+    height: 50vh;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #000;
+    margin: 5vmin 3vmin;
+}
+section.section_card_pad .items .item .pic{
+    height: 25vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+section.section_card_pad .items .item .txt{
+    
+    height: 33vh;
+    background-color: #23303f;
+  
+}
+section.section_card_pad .items .item .txt .wrap{
+    padding: 1.5vmin 2.5vmin;
+}
+section.section_card_pad .items .item .txt h1{
+    font-size: 2.5vmin;
+}
+@media screen and (max-width:1500px){
+    section.section_card_pad{
+        display: block;
+    }
+    section.section_yearEnd{
+        display: none;
+    }
+    section.section_card_pad .items .item{
+        height: 30vh;
+    }
+    section.section_card_pad .items .item .txt{
+        position: relative;
+     
+        height: 20vh;
+      
+        
+        
+        
+    }
+    section.section_card_pad .items .item .pic{
+        height: 15vh;
+    }
+    section.section_card_pad .items .item .txt .wrap{
+        position: absolute;
+        top: 1vmin
+    }
+    section.section_card_pad .items .item .txt h1{
+        font-size: 2vmin;
+    }
+    section.section_card_pad .items .item .txt p{
+        font-size: 1.5vmin;
+    }
+}
+@media screen and (max-width:769px){
+    section.section_card_pad .items .item .pic{
+        height: 15vh;
+    }
+}
+@media screen and (max-width:450px){
+    section.section_card_pad .items .item .txt h1{
+        font-size: 3vmin;
+    }
+    section.section_card_pad .items .item .txt p{
+        font-size: 2.5vmin;
+    }
+    section.section_card_pad .items .item{
+        width: 90%;
+        height: 15vh;
+        margin-top: 10vmin;
+    }
+    section.section_card_pad .items .item{
+        display: flex;
+    }
+    section.section_card_pad .items .item .pic{
+        width: 50%;
+    }
+    section.section_card_pad .items .item .txt{
+        width: 50%;
+        height: 17vh;
+    }
+}
+.square_bgc{
+    width: 80vw;
+    height: 80vh;
+    background-color:#030910;
+    position: fixed;
+    left: 11%;
+    top:12%;
+    z-index: 999;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    
+}
+.square_bgc .txt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.square_bgc .close{
+    position: relative;
+    
+}
+.square_bgc .close i{
+    color: white;
+    font-size: 5vmin;
+    opacity: 0.6;
+    transition: 0.5s;
+    position: absolute;
+    top: 2vh;
+    right: 2vmin
+    
+}
+.square_bgc .close i:hover{
+    opacity: 1;
+    cursor: pointer;
+    
+}
+.square_bgc .btn{
+    width: 40%;
+    height: 7vmin;
+    border: solid 1.5px #DE891A;
+    opacity: 0.6;
+    color: orange;
+    font-size: 3.5vmin;
+    text-align: center;
+    line-height: 6vmin;
+    letter-spacing: 1vmin;
+}
+.shadow{
+    display: none;
+    position: fixed;
+    z-index: 60;
+    width: 100vw;
+    top: -20vh;
+    height: 150vh;
+    filter: blur(10px);
+    background-color: rgba(255,255,255,0.1);
+ 
+}
+
+
+
+
+
+
+.dg-container{
+	width: 100%;
+	height: 480px;
+  
+    
+}
+.dg-wrapper{
+	width: 481px;
+	height: 316px;
+	margin: 0 auto;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+    perspective: 1000px;
+   
+}
+.dg-container .dg-prev{
+    width: 4vmin;
+    background-position: center center;
+    background-size: cover;
+    height: 4vmin;
+    
+    
+    
+}
+.dg-container .dg-next{
+    width: 4vmin;
+    background-position: center center;
+    background-size: cover;
+    height: 4vmin;
+    
+    
+    
+}
+.dg-wrapper p{
+    font-style: normal;
+}
+.dg-wrapper a{
+	width: 482px;
+	height: 350px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: transparent url(../images/browser.png) no-repeat top left;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+.dg-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img{
+	display: block;
+	padding: 41px 0px 0px 1px;
+}
+.dg-wrapper a div{
+	font-style: italic;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	color: #333;
+	font-size: 16px;
+	width: 100%;
+	bottom: -55px;
+	display: none;
+	position: absolute;
+}
+.dg-wrapper a.dg-center div{
+	display: block;
+}
+.dg-container nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -29px;
+}
+.dg-container nav span{
+	text-indent: -9000px;
+	float: left;
+	cursor:pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+	background: transparent url(../images/arrows.png) no-repeat top left;
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next{
+	background-position: top right;
+	margin-left: 10px;
+}
+.dg-wrapper p{
+    font-size: 1.8vmin;
+}
+
+@media screen and (max-width:490px){
+    .dg-wrapper{
+      margin-left: -5vmin;
+    }
+    .dg-wrapper p{
+        font-size: 2.5vmin;
+    }
+    .dg-wrapper span{
+        font-size: 3vmin;
+    }
+}
+
+
+
+
+
+
+
